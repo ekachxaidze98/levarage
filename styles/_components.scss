@@ -39,6 +39,9 @@
     }
     .about-item {
         width: 48%;
+        @media only screen and (max-width: 970px) {
+            margin: 20px 0;
+        }
         @media only screen and (max-width: 768px) {
             width: 80%;
         }
@@ -99,6 +102,9 @@
         i {
             margin-right: 8px;
         }
+    }
+    @media only screen and (max-width: 970px) {
+       margin: 35px;
     }
 }
 

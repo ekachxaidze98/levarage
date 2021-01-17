@@ -100,46 +100,7 @@
                 margin-bottom: 25px;
             }
 
-            //         &::before {
-            //             content: '';
-            // position: absolute;
-            // z-index: -1;
-            // top: 5%;
-            // right: 0;
-            // bottom: 0;
-            // left: 5%;
-            // width: 45%;
-            // height: 95%;
-            // border-top: 4px solid;
-            // border-right: 4px solid;
-            // transform: rotate(-15deg);
-            // border-image: -webkit-linear-gradient(to right, transparent 55%, var(--primary-color) 55%, var(--primary-color) 100%) 30;
-            // border-image: linear-gradient(to right, transparent 55%, var(--primary-color) 55%, var(--primary-color) 100%) 30;
-            // transition-timing-function: cubic-bezier(.25, .25, .75, .75);
-            // transition-duration: 0.6s;
-            // transition-property: opacity, transform;
-            // color: red;
-            //         }
-            //         &::after {
-            //             content: '';
-            //             position: absolute;
-            //             z-index: 1;
-            //             top: 5%;
-            //             right: 0;
-            //             bottom: 0;
-            //             left: 5%;
-            //             width: 45%;
-            //             height: 95%;
-            //             border-left: 4px solid;
-            //             border-bottom: 4px solid;
-            //             transform: rotate(-15deg);
-            //             border-image: -webkit-linear-gradient(to bottom, transparent 83%, var(--primary-color) 83%, var(--primary-color) 100%) 30;
-            //             border-image: linear-gradient(to bottom, transparent 83%, var(--primary-color) 83%, var(--primary-color) 100%) 30;
-            //             transition-timing-function: cubic-bezier(.25, .25, .75, .75);
-            //             transition-duration: 0.6s;
-            //             transition-property: opacity, transform;
-            //             color: red;
-            //         }
+           
         }
 
         .img-cont {
@@ -240,21 +201,7 @@
 
     .items {
         @include align-cards();
-        .border {
-            position: relative;
-            &::before {
-                content: " ";
-                position: absolute;
-                z-index: -1;                
-                top: -10px;
-                right: 0;
-                bottom: 0;
-                left: -10px;
-                width: calc(50% + 10px);
-                height: calc(50% + 10px);
-                background-color: blue;
-            }
-        }
+        
         .item {
             background-color: #191919;
             width: 31%;
@@ -270,6 +217,10 @@
                 font-size: 21px;
                 color: $white-color;
                 padding: 24px 0;
+                // background: -webkit-linear-gradient(rgb(238, 8, 8), rgb(51, 51, 51));
+                // -webkit-background-clip: text;
+                // background-clip: text;
+                // -webkit-text-fill-color: transparent;
             }
 
             p {
@@ -281,7 +232,7 @@
                 color: $gray;
                 padding-top: 30px;
             }
-
+         
             @media only screen and (max-width: 970px) {
                 width: 48%;
             }
@@ -461,7 +412,7 @@
 
     .items {
         @include flex();
-        @media only screen and (max-width: 768px) {
+        @media only screen and (max-width: 970px) {
             @include center();
         }
         .item {
@@ -473,12 +424,14 @@
                     width: 100%;
                     height: 5px;
                     background-color: #191919;
-                    margin: 45px 0;
+                    margin: 55px 0;
                     position: relative;
                     .progress-items {
                         display: flex;
                         position: absolute;
-                        margin-top: -4%;
+                        top: 30%;
+                        left: 50%;
+                        transform: translate(-50%, -30%);
                         .progress-item {
                             margin: 0 20px;
                             @include center();
@@ -532,7 +485,7 @@
                 width: 100%;
                 height: 100%;
             }
-            @media only screen and (max-width: 768px) {
+            @media only screen and (max-width: 970px) {
                 width: 85%;
             }
         }

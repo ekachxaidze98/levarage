@@ -293,23 +293,6 @@
       flex-wrap: wrap;
 }
 
-.service-section .items .border {
-  position: relative;
-}
-
-.service-section .items .border::before {
-  content: " ";
-  position: absolute;
-  z-index: -1;
-  top: -10px;
-  right: 0;
-  bottom: 0;
-  left: -10px;
-  width: calc(50% + 10px);
-  height: calc(50% + 10px);
-  background-color: blue;
-}
-
 .service-section .items .item {
   background-color: #191919;
   width: 31%;
@@ -632,7 +615,7 @@
       flex-wrap: wrap;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 970px) {
   .consultation .items {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -665,7 +648,7 @@
   width: 100%;
   height: 5px;
   background-color: #191919;
-  margin: 45px 0;
+  margin: 55px 0;
   position: relative;
 }
 
@@ -674,7 +657,10 @@
   display: -ms-flexbox;
   display: flex;
   position: absolute;
-  margin-top: -4%;
+  top: 30%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -30%);
+          transform: translate(-50%, -30%);
 }
 
 .consultation .items .item .progress-bar .progress-items .progress-item {
@@ -746,7 +732,7 @@
   height: 100%;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 970px) {
   .consultation .items .item {
     width: 85%;
   }
@@ -1021,6 +1007,12 @@ html, body {
   width: 48%;
 }
 
+@media only screen and (max-width: 970px) {
+  .about-items .about-item {
+    margin: 20px 0;
+  }
+}
+
 @media only screen and (max-width: 768px) {
   .about-items .about-item {
     width: 80%;
@@ -1129,5 +1121,11 @@ html, body {
 
 .title-container .service-btn i {
   margin-right: 8px;
+}
+
+@media only screen and (max-width: 970px) {
+  .title-container {
+    margin: 35px;
+  }
 }
 /*# sourceMappingURL=style.css.map */

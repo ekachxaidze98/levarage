@@ -1,0 +1,104 @@
+// btn
+.btn {
+    padding: 10px 25px;
+    font-weight: 400;
+    color: $white-color;
+    border: 2px solid $primary-color;
+    transition:  0.35s ease-in;
+    display: inline-block;
+    i {
+        margin-right: 12px;
+    }
+    &:hover {
+        background:  linear-gradient(45deg, $primary-dark 15%, $primary-light 65%);
+    }
+}
+
+// title
+.title {
+    font-size: 48px;
+    font-weight: 600;
+    color: $white-color;
+    position: relative;
+    &::before {
+        content: '';
+        position: absolute;
+        top: -22px;
+        left: 0;
+        width: 50px;
+        height: 5px;
+        background-color: $primary-color;
+    }
+}
+
+// section
+.about-items {
+    @include flex();
+    @media only screen and (max-width: 768px) {
+        @include center();
+    }
+    .about-item {
+        width: 48%;
+        @media only screen and (max-width: 768px) {
+            width: 80%;
+        }
+        p {
+            @include mainText();
+        }
+        .card {
+            display: flex;
+            align-items: center;
+            margin-top: 70px;
+            @media only screen and (max-width: 768px) {
+                @include center();
+            }
+            h4 {
+                font-size: 21px;
+                color: $white-color;
+                font-weight: 600;
+                margin-bottom: 25px;
+            }
+            i {
+                color: $primary-color;
+                margin: 0 30px;
+                @media only screen and (max-width: 768px) {
+                    margin: 15px 0;
+                }
+            }
+        }
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            @media only screen and (max-width: 768px) {
+               margin-top: 40px;
+            }
+        }
+    }
+}
+
+// title-cont 
+.title-container {
+    @include flex();
+    .title-item {
+        p {
+            @include mainText();
+            margin: 30px 0 40px 0;
+        }
+    }
+    .service-btn {
+        padding: 12px 25px;
+        background-color: $primary-color;
+        font-size: 16px;
+        color: $white-color;
+        cursor: pointer;
+        border-radius: 3px;
+        &:hover {
+            background:  linear-gradient(45deg, $primary-dark 15%, $primary-light 65%);
+        }
+        i {
+            margin-right: 8px;
+        }
+    }
+}
+

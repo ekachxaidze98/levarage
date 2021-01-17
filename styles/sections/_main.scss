@@ -100,7 +100,7 @@
                 margin-bottom: 25px;
             }
 
-           
+
         }
 
         .img-cont {
@@ -201,7 +201,7 @@
 
     .items {
         @include align-cards();
-        
+
         .item {
             background-color: #191919;
             width: 31%;
@@ -232,7 +232,7 @@
                 color: $gray;
                 padding-top: 30px;
             }
-         
+
             @media only screen and (max-width: 970px) {
                 width: 48%;
             }
@@ -412,62 +412,72 @@
 
     .items {
         @include flex();
+
         @media only screen and (max-width: 970px) {
             @include center();
         }
+
         .item {
             width: 48%;
-                p {
-                    @include mainText();
-                }
-                .progress-bar {
-                    width: 100%;
-                    height: 5px;
-                    background-color: #191919;
-                    margin: 55px 0;
-                    position: relative;
-                    .progress-items {
-                        display: flex;
-                        position: absolute;
-                        top: 30%;
-                        left: 50%;
-                        transform: translate(-50%, -30%);
-                        .progress-item {
-                            margin: 0 20px;
-                            @include center();
-                            span {
-                                width: 40px;
-                                height: 40px;
-                                line-height: 40px;
-                                display: block;
-                                font-size: 16px;
-                                color: $white-color;
-                                background-color: #191919;
-                                font-weight: 600;
-                                text-align: center;
-                                border-radius: 50%;
-                            }
-                            p {
-                                font-size: 16px;
-                                color: $white-color;
-                                font-weight: 700;
-                            }
+
+            p {
+                @include mainText();
+            }
+
+            .progress-bar {
+                width: 100%;
+                height: 5px;
+                background-color: #191919;
+                margin: 55px 0;
+                position: relative;
+
+                .progress-items {
+                    display: flex;
+                    position: absolute;
+                    top: 30%;
+                    left: 50%;
+                    transform: translate(-50%, -30%);
+
+                    .progress-item {
+                        margin: 0 20px;
+                        @include center();
+
+                        span {
+                            width: 40px;
+                            height: 40px;
+                            line-height: 40px;
+                            display: block;
+                            font-size: 16px;
+                            color: $white-color;
+                            background-color: #191919;
+                            font-weight: 600;
+                            text-align: center;
+                            border-radius: 50%;
+                        }
+
+                        p {
+                            font-size: 16px;
+                            color: $white-color;
+                            font-weight: 700;
                         }
                     }
                 }
+            }
+
             form {
                 input {
                     margin: 5px 0;
                     width: 100%;
-                padding: 18px 5px;
-                background-color: transparent;
-                border: 1px solid $primary-color;
-                font-size: 16px;
-                color: $gray;
-                outline: none;
-                border-radius: 3px;
-                font-weight: 600;
+                    padding: 18px 5px;
+                    background-color: transparent;
+                    border: 1px solid $primary-color;
+                    font-size: 16px;
+                    color: $gray;
+                    outline: none;
+                    border-radius: 3px;
+                    font-weight: 600;
                 }
+
                 .form-btn {
                     text-decoration: none;
                     padding: 10px 25px;
@@ -476,15 +486,18 @@
                     font-size: 16px;
                     display: inline-block;
                     margin: 15px 0;
+
                     &:hover {
-                        background:  linear-gradient(45deg, $primary-dark 15%, $primary-light 65%);
+                        background: linear-gradient(45deg, $primary-dark 15%, $primary-light 65%);
                     }
                 }
             }
+
             img {
                 width: 100%;
                 height: 100%;
             }
+
             @media only screen and (max-width: 970px) {
                 width: 85%;
             }
@@ -595,17 +608,21 @@ footer {
         }
     }
 }
+
 // copy-right
 .copy-right {
     background-color: #131313;
     padding: 35px 0;
+
     .items {
         @include flex();
+
         .item {
             p {
                 font-size: 14px;
                 color: $gray;
                 font-weight: 400;
+
                 a {
                     text-decoration: none;
                     color: $primary-color;
@@ -613,5 +630,5 @@ footer {
             }
         }
     }
-    
+
 }
